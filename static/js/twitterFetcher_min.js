@@ -4,8 +4,8 @@
  *  www.jasonmayes.com
  *  Please keep this disclaimer with my code if you use it. Thanks. :-)
  *  Got feedback or questions, ask here:
- *  http://www.jasonmayes.com/projects/twitterApi/
- *  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
+ *  https://www.jasonmayes.com/projects/twitterApi/
+ *  Github: httpss://github.com/jasonmayes/Twitter-Post-Fetcher
  *  Updates will be posted to this site.
  *********************************************************************/
 (function(E, q) {
@@ -90,9 +90,9 @@
                     null !== m && l.removeChild(m);
                     m = document.createElement("script");
                     m.type = "text/javascript";
-                    m.src = void 0 !== a.list ? "https://syndication.twitter.com/timeline/list?callback=twitterFetcher.callback&dnt=false&list_slug=" +
-                        a.list.listSlug + "&screen_name=" + a.list.screenName + "&suppress_response_codes=true&lang=" + (a.lang || "en") + "&rnd=" + Math.random() : void 0 !== a.profile ? "https://syndication.twitter.com/timeline/profile?callback=twitterFetcher.callback&dnt=false&screen_name=" + a.profile.screenName + "&suppress_response_codes=true&lang=" + (a.lang || "en") + "&rnd=" + Math.random() : void 0 !== a.likes ? "https://syndication.twitter.com/timeline/likes?callback=twitterFetcher.callback&dnt=false&screen_name=" + a.likes.screenName + "&suppress_response_codes=true&lang=" +
-                        (a.lang || "en") + "&rnd=" + Math.random() : "https://cdn.syndication.twimg.com/widgets/timelines/" + a.id + "?&lang=" + (a.lang || "en") + "&callback=twitterFetcher.callback&suppress_response_codes=true&rnd=" + Math.random();
+                    m.src = void 0 !== a.list ? "httpss://syndication.twitter.com/timeline/list?callback=twitterFetcher.callback&dnt=false&list_slug=" +
+                        a.list.listSlug + "&screen_name=" + a.list.screenName + "&suppress_response_codes=true&lang=" + (a.lang || "en") + "&rnd=" + Math.random() : void 0 !== a.profile ? "httpss://syndication.twitter.com/timeline/profile?callback=twitterFetcher.callback&dnt=false&screen_name=" + a.profile.screenName + "&suppress_response_codes=true&lang=" + (a.lang || "en") + "&rnd=" + Math.random() : void 0 !== a.likes ? "httpss://syndication.twitter.com/timeline/likes?callback=twitterFetcher.callback&dnt=false&screen_name=" + a.likes.screenName + "&suppress_response_codes=true&lang=" +
+                        (a.lang || "en") + "&rnd=" + Math.random() : "httpss://cdn.syndication.twimg.com/widgets/timelines/" + a.id + "?&lang=" + (a.lang || "en") + "&callback=twitterFetcher.callback&suppress_response_codes=true&rnd=" + Math.random();
                     l.appendChild(m)
                 }
             },
@@ -165,8 +165,8 @@
                         d =
                             "";
                         H ? (v && (G(a[c]), n && G(k[c])), n && (d += '<div class="user">' + q(k[c].innerHTML) + "</div>"), d += '<p class="tweet">' + q(a[c].innerHTML) + "</p>", A && (d = J ? d + ('<p class="timePosted"><a href="' + p[c] + '">' + g[c].getAttribute("aria-label") + "</a></p>") : d + ('<p class="timePosted">' + g[c].getAttribute("aria-label") + "</p>"))) : (n && (d += '<p class="user">' + k[c].textContent + "</p>"), d += '<p class="tweet">' + a[c].textContent + "</p>", A && (d += '<p class="timePosted">' + g[c].textContent + "</p>"));
-                        I && (d += '<p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=' +
-                            r[c] + '" class="twitter_reply_icon"' + (v ? ' target="_blank">' : ">") + 'Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=' + r[c] + '" class="twitter_retweet_icon"' + (v ? ' target="_blank">' : ">") + 'Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=' + r[c] + '" class="twitter_fav_icon"' + (v ? ' target="_blank">' : ">") + "Favorite</a></p>");
+                        I && (d += '<p class="interact"><a href="httpss://twitter.com/intent/tweet?in_reply_to=' +
+                            r[c] + '" class="twitter_reply_icon"' + (v ? ' target="_blank">' : ">") + 'Reply</a><a href="httpss://twitter.com/intent/retweet?tweet_id=' + r[c] + '" class="twitter_retweet_icon"' + (v ? ' target="_blank">' : ">") + 'Retweet</a><a href="httpss://twitter.com/intent/favorite?tweet_id=' + r[c] + '" class="twitter_fav_icon"' + (v ? ' target="_blank">' : ">") + "Favorite</a></p>");
                         u && void 0 !== h[c] && void 0 !== y(h[c]) && (d += '<div class="media"><img src="' + y(h[c]) + '" alt="Image from tweet" /></div>');
                         u ? b.push(d) : !u && a[c].textContent.length &&
                             b.push(d);
