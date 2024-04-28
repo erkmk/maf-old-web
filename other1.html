@@ -1,0 +1,552 @@
+{% extends 'base.html' %}
+{% block css %}
+
+<link rel="stylesheet" href="../static/css/unit.css">
+{% endblock css %}
+
+{% block body %}
+
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ask</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-20px">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                {% if messages %}
+                {% for message in messages %}
+                <strong>{{ message }}</strong>
+                {% endfor %}
+                {% endif %}
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section
+    class="position-relative cover-background hero-style19 tz-builder-bg-image border-none xs-padding-50px-tb hero-style2 bg-img-one"
+    id="home"
+    style="background: linear-gradient(rgba(25,25,25,0.65), rgba(0,0,0,0.70)) repeat scroll 0% 0%, transparent url('../static/images/bg-image/counse-1.jpg') repeat scroll 0% 0%;">
+    <div class="container one-third-screen position-relative">
+        <div class="row">
+            <div class="slider-typography xs-position-static text-center">
+                <div class="slider-text-middle-main">
+                    <div class="slider-text-middle text-center xs-padding-fifteen xs-no-padding-lr">
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 center-col" style="margin-top: 20rem">
+                            <h1
+                                class="title-extra-large-4 line-height-55 sm-title-extra-large-4 xs-title-extra-large-2 text-white alt-font font-weight-600 margin-eight-bottom tz-text">
+                                Mission Awareness Foundation</h1>
+                            <span
+                                class="title-extra-large xs-title-extra-large  display-block alt-font font-weight-700 margin-three-bottom tz-text"
+                                style="color:white;">The Begining of Positive Change...</span>
+                            <div class="text-white text-extra-large xs-text-extra-large width-90 margin-twelve-bottom tz-text margin-lr-auto">
+                        </div>
+                            <div class="btn-dual">
+                                <a class="btn btn-large propClone bg-white text-black btn-circle xs-margin-ten-bottom xs-width-100"
+                                    href="#feature-section1"><span class="tz-text">OUR WORK</span><i
+                                        class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a>
+                                <a class="btn btn-large propClone bg-white text-black btn-circle xs-margin-ten-bottom xs-width-100"
+                                data-toggle="modal" data-target="#volunteerModal"><span class="tz-text">VOULUNTEER</span><i
+                                        class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- About Us -->
+<section class="padding-110px-tb xs-padding-60px-tb bg-white builder-bg" id="content-section50">
+    <div class="container">
+        <div class="row equalize xs-equalize-auto equalize-display-inherit">
+            <div class="col-md-5 col-sm-6 xs-12 xs-text-center display-table">
+                <div class="display-table-cell-vertical-middle">
+                    <img alt="" src="../static/images/Mission.jpeg" data-img-size="(W)800px X (H)681px"
+                        style="margin-left: 3px; height: 407px; ">
+                </div>
+            </div>
+            <!-- content details -->
+            <div class="col-md-6 col-sm-6 xs-12 xs-text-center xs-margin-nineteen-bottom display-table">
+                <div class="display-table-cell-vertical-middle">
+                    <h2 class="alt-font title-extra-large sm-title-large xs-section-title-large text-dark-gray line-height-40 width-90 sm-width-100 margin-eight-bottom tz-text sm-margin-ten-bottom sm-margin-ten-top"
+                        style="color: #744649;">About Us</h2>
+                    <div class="text-extra-large tz-text width-90 sm-width-100 margin-five-bottom sm-margin-ten-bottom"
+                        style="color: black;">Mission Awareness Foundation (MAF) is a non-profit societal
+                        organisation. It was established in 2020 by a group of well educated and socially
+                        responsible personalities. MAF carries out various developmental programs to uplift the
+                        socially, economically and educationally marginalized communities. The organisation
+                        continues to work for the elimination of child labor, educational empowerment, the
+                        empowerment of women, youth, and the comprehensive development of the community.</div>
+                    <!-- <div class="text-medium tz-text width-90 sm-width-100 margin-ten-bottom sm-margin-ten-bottom xs-margin-twenty-bottom">
+                <p>Mission Awareness Foundation (MAF) is a non-profit societal organisation. It was established in 2020 by a group of well educated and socially responsible personalities. MAF carries out various developmental programs to uplift the  socially, economically and educationally marginalized communities. The organisation continues to work for the elimination of child labor, educational empowerment, the empowerment of women, youth, and the comprehensive development of the community</p>
+                </div> -->
+                    <a class="btn-medium btn-circle btn border-2-dark-gray btn-border text-dark-gray propClone"
+                        href="#feature-section1"><span class="tz-text">Our Work</span><i
+                            class="fa fa-long-arrow-right icon-extra-small tz-icon-color"></i></a>
+                </div>
+            </div>
+            <!-- end content details -->
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Mission & Vision -->
+<section class="padding-110px-tb xs-padding-60px-tb cover-background tz-builder-bg-image border-none bg-img-two"
+    id="content-section41" data-img-size="(W)1920px X (H)650px"
+    style="background:linear-gradient(rgba(0,0,0,0.6), rgba(40,40,40,0.6)), url('../static/images/bg-image/mission-bg.jpg')">
+    <div class="container">
+        <div class="row equalize sm-equalize-auto three-column">
+            <!-- feature box 4 -->
+            <div
+                class="item_course col-md-6 col-sm-12 col-xs-12 text-center sm-margin-four-bottom xs-margin-ten-bottom display-table">
+                <div
+                    class="padding-twenty-nine sm-padding-fifteen xs-padding-twenty-one bg-black-dark-rgba tz-background-color display-table-cell-vertical-middle">
+                    <span class="text-white margin-twenty-three-bottom display-block tz-text"
+                        style="font-size: 50px;">MISSION</span>
+
+                    <div class="text-extra-large tz-text sm-width-80 xs-width-100 sm-margin-lr-auto"
+                        style="color: white;">
+                        <p class="no-margin-bottom">To improve the quality of life of the marginalized sectors of
+                            society by influencing individuals, groups and institutions to realize their humanitarian
+                            concern; and by providing a venue for them to contribute their resources and succeed in a
+                            rapidly changing society.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end feature box 4 -->
+            <!-- feature box 4 -->
+            <div
+                class="item_course col-md-6 col-sm-12 col-xs-12 text-center sm-margin-four-bottom xs-margin-ten-bottom display-table">
+                <div
+                    class="padding-twenty-nine sm-padding-fifteen xs-padding-twenty-one bg-black-dark-rgba tz-background-color display-table-cell-vertical-middle">
+                    <span class="text-white margin-twenty-three-bottom display-block tz-text"
+                        style="font-size: 50px;">VISION</span>
+                    <div class="text-extra-large tz-text sm-width-80 xs-width-100 sm-margin-lr-auto"
+                        style="color: white;">
+                        <p class="no-margin-bottom">The Vision of MAF is to become a catalyst for progression,
+                            enhancement and enrichment of the society through awareness in the field of Education,
+                            Health, Sports and Skill Development programs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end feature box 4 -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Work -->
+<section class="padding-110px-tb bg-white builder-bg feature-style1 xs-padding-60px-tb border-none"
+    id="feature-section1">
+    <div class="container">
+        <!-- section title -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2
+                    class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">
+                    Our Programs</h2>
+                <div
+                    class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom xs-margin-nineteen-bottom">
+                </div>
+            </div>
+        </div>
+        <!-- end section title -->
+        <div class="row four-column">
+            <!-- features box -->
+            <div
+                class=" item_course col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-fifteen-bottom">
+                <div class="padding-ten border-radius-8 bg-white border-light builder-bg">
+                    <a href="education">
+                        <div class="title-extra-large-4 text-deep-green margin-fifteen-top"><i
+                                class="fa fa-graduation-cap tz-icon-color" aria-hidden="true"></i></div>
+                        <div class="content-box bg-light-gray tz-background-color">
+                            <h3
+                                class="title-small alt-font font-weight-600 text-dark-gray margin-twenty-seven-top sm-margin-three-bottom tz-text">
+                                EDUCATION</h3>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- end features box -->
+            <!-- features box -->
+            <div
+                class="item_course col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-fifteen-bottom">
+                <div class="padding-ten border-radius-8 bg-white border-light builder-bg">
+                    <a href="#">
+                        <div class="title-extra-large-4 text-deep-green margin-fifteen-top"><i
+                                class="fa fa-heart tz-icon-color" aria-hidden="true"></i></div>
+                        <div class="content-box bg-light-gray tz-background-color">
+                            <h3
+                                class="title-small alt-font font-weight-600 text-dark-gray margin-twenty-seven-top sm-margin-three-bottom tz-text">
+                                MEDICAL</h3>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- end features box -->
+            <!-- features box -->
+            <div
+                class="item_course col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-fifteen-bottom">
+                <div class="padding-ten border-radius-8 bg-white border-light builder-bg">
+                    <a href="#">
+                        <div class="title-extra-large-4 text-deep-green margin-fifteen-top"><i
+                                class="fa fa-users tz-icon-color" aria-hidden="true"></i></div>
+                        <div class="content-box bg-light-gray tz-background-color">
+                            <h3
+                                class="title-small alt-font font-weight-600 text-dark-gray margin-five-top sm-margin-three-bottom tz-text">
+                                AWARNESS CAMPAIGN</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- end features box -->
+            <!-- features box -->
+            <div
+                class="item_course col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-fifteen-bottom">
+                <div class="padding-ten border-radius-8 bg-white border-light builder-bg">
+                    <a href="/library">
+                        <div class="title-extra-large-4 text-deep-green margin-fifteen-top "><i
+                                class="fa fa-book tz-icon-color" aria-hidden="true"></i></div>
+                        <div class="content-box bg-light-gray tz-background-color">
+                            <h3
+                                class="title-small alt-font font-weight-600 text-dark-gray margin-five-top sm-margin-three-bottom tz-text">
+                                Dr. A.P.J. ABDUL KALAM LIBRARY</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- end features box -->
+        </div>
+    </div>
+</section>
+
+
+<!-- donation Button -->
+<section
+    class="padding-100px-tb builder-bg offer cover-background tz-builder-bg-image xs-padding-60px-tb border-none bg-img-five"
+    id="callto-action7" data-img-size="(W)1920px X (H)900px"
+    style="background:linear-gradient(rgba(23,23,23,0.8), rgba(23,23,23,0.8)), url('../static/images/bg-image/Mock-Test.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-two">
+                <div class="offer-box-left">
+                    <span
+                        class="text-large xs-title-extra-large text-white display-block margin-one-bottom alt-font tz-text ">YOUR
+                        LITTLE HELP NEEDED</span>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
+                <a class="btn-large btn-circle btn text-white font-weight-500 bg-light-orange btn-3d"
+                    href="/donation"><span class="tz-text">DONATE NOW</span><i
+                        class="fa fa-long-arrow-right icon-extra-small tz-icon-color"></i></a>
+            </div>
+            <!-- end section title -->
+        </div>
+    </div>
+</section>
+
+<!-- Extra Button -->
+<section class="padding-60px-top bg-deep-green builder-bg border-none" id="callto-action2" style="padding-bottom:74px">
+    <div class="container">
+        <div class="row equalize">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <a class="btn btn-large propClone bg-white text-black btn-circle xs-margin-ten-bottom xs-width-100"
+                    data-toggle="modal" data-target="#volunteerModal"><span class="tz-text">VOULUNTEER</span><i
+                        class="fa fa-long-arrow-right icon-extra-small tz-icon-color"></i></a>
+                <a class="btn btn-large propClone bg-white text-black btn-circle xs-margin-ten-bottom xs-width-100"
+                    href="#contact-section8"><span class="tz-text">ANY QUERY?</span><i
+                        class="fa fa-long-arrow-right icon-extra-small tz-icon-color"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- success stories -->
+<section class="padding-110px-tb xs-padding-60px-tb blog-style1 bg-white builder-bg" id="content-section27">
+    <div class="container">
+        <!-- section title -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2
+                    class="section-title-medium sm-section-title-medium xs-section-title-large text-dark-gray font-weight-700 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">
+                    SUCCESS STORY</h2>
+                <div
+                    class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom  xs-margin-nineteen-bottom">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type
+                    specimen book.</div>
+            </div>
+        </div>
+        <!-- end section title -->
+        <div class="row">
+            {% for i in story %}
+            <!-- blog item -->
+            <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-nineteen-bottom">
+                <div class="blog-post">
+                    <!-- blog image -->
+                    <div class="blog-image">
+                        <a href="#"><img class="img100" alt="" src="../media/{{i.image}}"
+                                data-img-size="(W)800px X (H)507px" style="height: 27rem;"></a>
+                    </div>
+                    <!-- end blog image -->
+                    <!-- blog details -->
+                    <div class="post-details bg-gray tz-background-color">
+                        <div
+                            class="post-author tz-background-color bg-light-orange margin-thirteen-bottom md-margin-eleven-bottom xs-margin-eight-bottom">
+                            <a href="#" class="tz-text text-white blog-name"></a> <span
+                                class="tz-text">{{i.date}}</span>
+                        </div>
+                        <a href="#"
+                            class="tz-text text-dark-gray blog-post-title text-medium font-weight-600 margin-five-bottom display-inline-block md-margin-five-bottom">{{i.name}}</a>
+                        <div class="text-medium tz-text">{{i.thought}}</div>
+                    </div>
+                    <!-- end blog details -->
+                </div>
+            </div>
+            <!-- end blog item -->
+            {% endfor %}
+            <!-- blog item -->
+            {% comment %} <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-nineteen-bottom">
+                <div class="blog-post">
+                    <!-- blog image -->
+                    <div class="blog-image">
+                        <a href="#"><img class="img100" alt="" src="../static/images/agency-blog-img02.jpg"
+                                data-img-size="800px (W) X 507px (H)"></a>
+                    </div>
+                    <!-- end blog image -->
+                    <!-- blog details -->
+                    <div class="post-details bg-gray tz-background-color">
+                        <div
+                            class="post-author tz-background-color bg-light-orange margin-thirteen-bottom md-margin-eleven-bottom xs-margin-eight-bottom">
+                            <a href="#" class="tz-text text-white blog-name">PAUL SCRIVENS</a> <span class="tz-text">26
+                                JULY, 2016</span>
+                        </div>
+                        <a href="#"
+                            class="tz-text text-dark-gray blog-post-title text-medium font-weight-600 margin-five-bottom display-inline-block md-margin-five-bottom">AN
+                            ARTIST IS TO BELIEVE IN LIFE</a>
+                        <div class="text-medium tz-text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's.</div>
+                    </div>
+                    <!-- end blog details -->
+                </div>
+            </div> {% endcomment %}
+            <!-- end blog item -->
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Team -->
+<section class="bg-white builder-bg padding-60px-tb xs-padding-60px-tb team-style3" id="team-section3">
+    <div class="container" style="margin-top:-60px">
+        <div class="section-title">
+            <h1>Our Members</h1>
+        </div>
+
+        <div class="row">
+
+            {% for i in member %}
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="../media/{{i.image}}" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>{{i.name}}</h2>
+                        <h3>{{i.position}}</h3>
+                        <p>{{i.desc}}</p>
+                        <h4 style="font-size:13.5px">{{i.email}}</h4>
+                    </div>
+                    <div class="team-social">
+                        <a href="{{i.twitter}}" class="social-tw"> <i class="fa fa-twitter"></i></a>
+                        <a href="{{i.fb}}" class="social-fb"> <i class="fa fa-facebook-f"></i></a>
+                        <a href="{{i.insta}}" class="social-in"> <i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="../static/images/team-06.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Mayra</h2>
+                        <h3>Art Director</h3>
+                        <p>Some text goes here that describes about team members</p>
+                        <h4>abc@gmail.com</h4>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"> <i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-fb"> <i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="social-li"> <i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="social-in"> <i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-yt"> <i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="../static/images/team-07.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>John</h2>
+                        <h3>Developer</h3>
+                        <p>Some text goes here that describes about team members</p>
+                        <h4>abc@gmail.com</h4>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"> <i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-fb"> <i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="social-li"> <i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="social-in"> <i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-yt"> <i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="../static/images/team-04.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Jennifer</h2>
+                        <h3>Designer</h3>
+                        <p>Some text goes here that describes about team members</p>
+                        <h4>abc@gmail.com</h4>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"> <i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-fb"> <i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="social-li"> <i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="social-in"> <i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-yt"> <i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+
+
+
+<!-- contact us -->
+<section class="padding-70px-tb bg-light-gray builder-bg contact-form-style1 xs-padding-60px-tb border-none"
+    id="contact-section8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                <div class="col-md-3 col-sm-6 col-xs-12 xs-margin-nineteen-bottom" style="height: 39rem;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291.10882788232766!2d72.88820412776614!3d19.10008882475153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9be914b971f%3A0x9ba98e22d61702d4!2sMission%20Awareness%20Foundation!5e0!3m2!1sen!2sin!4v1647348653245!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12 sm-margin-five-bottom xs-margin-fifteen-bottom xs-text-center">
+                    <div class="padding-nine no-padding-tb xs-no-padding">
+                        <h5 class="font-weight-500 text-dark-gray display-block alt-font tz-text margin-five-bottom">
+                            MISSION AWARNESS FOUNDATIONS</h5>
+                        <div class="text-medium tz-text margin-fifteen-bottom">
+                            <p>The Begining of Positive Change....</p>
+                        </div>
+                        <div class="contact-details no-padding xs-text-center">
+                            <div class="details-box margin-ten-bottom float-left width-100">
+                                <div
+                                    class="details-icon col-md-2 no-padding xs-width-100 xs-margin-three-bottom xs-display-block">
+                                    <i
+                                        class="fa fa-home icon-medium text-deep-green tz-icon-color position-relative top-6"></i>
+                                </div>
+                                <div class="details-text col-md-10 no-padding">
+                                    <div class="text-medium font-weight-600 text-dark-gray display-block tz-text">
+                                        Contact Address</div>
+                                    <div class="text-medium tz-text">#11, New Modern Society,Lokmanya Tilak Nagar<br>
+                                        90 Feet Road, Sakinaka, Mumbai 400072</div>
+                                </div>
+                            </div>
+                            <div class="details-box margin-ten-bottom float-left width-100">
+                                <div
+                                    class="details-icon col-md-2 no-padding xs-width-100 xs-margin-three-bottom xs-display-block">
+                                    <i
+                                        class="fa fa-envelope icon-medium text-deep-green tz-icon-color position-relative top-6"></i>
+                                </div>
+                                <div class="details-text col-md-10 no-padding">
+                                    <div class="text-medium font-weight-600 text-dark-gray display-block tz-text">
+                                        General Enquiries</div>
+                                    <a class="text-medium tz-text display-block"
+                                        href="mailto:support@eduonix.com">missionawarness21@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="details-box float-left width-100">
+                                <div
+                                    class="details-icon col-md-2 no-padding xs-width-100 xs-margin-three-bottom xs-display-block">
+                                    <i
+                                        class="fa fa-phone icon-medium text-deep-green tz-icon-color position-relative top-6"></i>
+                                </div>
+                                <div class="details-text col-md-10 no-padding">
+                                    <div class="text-medium font-weight-600 text-dark-gray display-block tz-text">
+                                        Call Us Today!</div>
+                                    <div class="text-medium tz-text">+91 900 441 7626</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 sm-margin-ten-top">
+                    <div class="padding-eighteen bg-white box-shadow-light tz-background-color xs-padding-eleven">
+                        <h6 class="font-weight-600 alt-font text-black display-block tz-text margin-fifteen-bottom">
+                            Any Query?</h6>
+
+                        <form method="post" action="/">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name='name'
+                                    placeholder='* Enter Your Full Name' required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name='email'
+                                    placeholder='* Your Email' aria-describedby="emailHelp" required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" placeholder='Your Message'
+                                    rows="2"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}
