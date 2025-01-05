@@ -121,7 +121,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Save More Lifes
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Change More Lifes
                                         With Our Helping Hand</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Opening doors to education
                                         and opportunities for ambitious students.</p>
@@ -149,7 +149,52 @@
         </div>
     </div>
     <!-- Carousel End -->
+    <div class="container-xxl">
+            <div class="row">
+                <div class="fadeInUp" data-wow-delay="0.1s" style="font-size: 1.5rem; color: black;">
+                    Since 2020, Mission Awareness Foundation is working to support the Orphans, Specially-abled and Financially Backword, Striving to Provide them with equal Opportunities and Resources for their growth related to Education, Health, and Skill Development.   
+                </div>
+        </div>
+    </div>
 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp result_count" data-wow-delay="0.1s">
+                    <div class="result_box">
+                        <div class="r_img">
+                            <img src="img/medical_icon.png" alt="">
+                        </div>
+                        <div class="r_count"> <span class="r_count_number numbers1" data-val="150">0</span><span class="r_count_number">+</span> <br> Medical Selections <br> in just 4 Years</div>
+                    </div>
+
+                    <div class="result_box">
+                        <div class="r_img">
+                            <img src="img/Scholarship_icon.png" alt="">
+                        </div>
+                        <div class="r_count"><span class="r_count_number">₹</span> <span class="r_count_number numbers1" data-val="6">0</span> <span class="r_count_number">Cr+</span><br>Scholarship <br> Assistance Worth<br> </div>
+                    </div>
+
+                    <div class="result_box">
+                        <div class="r_img">
+                            <img src="img/student_icon.png" alt="">
+                        </div>
+                        <div class="r_count"> <span class="r_count_number numbers1" data-val="40">0</span><span class="r_count_number">+</span> <br> Student get Placed <br> in just 2 Years</div>
+                    </div>
+
+                    <div class="result_box">
+                        <div class="r_img">
+                            <img src="img/Counseling_icon.png" alt="">
+                        </div>
+                        <div class="r_count"> <span class="r_count_number numbers1" data-val="2" >0</span><span class="r_count_number">K+</span> <br> Free Admission <br> and Counseling</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -166,7 +211,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
                         <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">About Us</div>
-                        <h1 class="display-6 mb-5">We Help People In Need Around The World</h1>
+                        <h1 class="display-6 mb-5">Mission Awareness Foundation</h1>
                         <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
                             <p class="text-dark mb-2">Empowering Students Through Education and Comprehensive Support
                                 Services.</p>
@@ -444,6 +489,24 @@
 
     <!-- JavaScript Libraries -->
     <script>
+        let valueDisplays = document.querySelectorAll(".numbers1");
+        let interval = 3000;
+
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let increment = 1;
+            let duration = Math.floor(interval / (endValue / increment));
+
+            let counter = setInterval(() => {
+                startValue = Math.min(startValue + increment, endValue);
+                valueDisplay.textContent = startValue;
+                if (startValue === endValue) clearInterval(counter);
+            }, duration);
+        });
+    </script>
+
+    <script>
         // Select all tab links
         const tabLinks = document.querySelectorAll('.about-tab .nav-link');
 
@@ -474,6 +537,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+   
+
 </body>
 
 </html>
