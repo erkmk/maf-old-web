@@ -1386,7 +1386,7 @@
   }
 
   .image-container img {
-    height: 362px !important;
+    /* height: 362px !important; */
   }
 }
 
@@ -2292,7 +2292,9 @@
   border-image-slice: 1;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
 /* Text Animation (Typing Effect) */
@@ -2309,9 +2311,9 @@
 }
 
 .animated-heading {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   /* color: #ff6ec4; */
-  color: black;
+  color: #993F3F;
   animation: typing 2s steps(15, end) 1s forwards;
   overflow: hidden;
   white-space: nowrap;
@@ -2323,40 +2325,6 @@
     width: 100%;
   }
 }
-
-/* Glowing Button */
-.btn-glow {
-  color: white;
-  /* background: linear-gradient(90deg, #ff6ec4, #7873f5); */
-  background-color: #000;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-glow:hover {
-  box-shadow: 0px 4px 20px rgba(255, 110, 196, 0.6);
-}
-
-.btn-glow::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  /* background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent); */
-  background-color: #000;
-  transform: scale(0);
-  transition: transform 0.5s ease;
-}
-
-.btn-glow:hover::before {
-  transform: scale(1);
-}
-
 /* Background Gradient for Text */
 .text-container .lead {
   /* background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); */
@@ -2381,8 +2349,9 @@
 .image-container img {
   border-radius: 10px;
   transition: transform 0.5s ease-out;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  /* height: 90%; */
+  /* max-height: 50%; */
 }
 
 .carousel-inner .col-md-6 .image-container {
@@ -2897,7 +2866,7 @@
 
 /* Image Container with Glow Effect */
 .image-container {
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
   position: relative;
 }
