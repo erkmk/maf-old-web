@@ -1974,6 +1974,15 @@
   .activity .blood-donation {
     margin-bottom: 0.5rem;
   }
+  .animated-heading{
+    font-size: 20px;
+  }
+  .text-container .lead{
+    font-size: 16px;
+  }
+  .next-icon2, .prev-icon2{
+    margin-top: -15rem;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -2986,7 +2995,7 @@
 
 @media screen and (max-width:550px) {
   #carousel-control-next {
-    right: 56px;
+    right: 38px;
   }
 
   .about-hero-content {
