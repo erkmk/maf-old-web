@@ -3248,7 +3248,7 @@
 }
 
 .mission-icon-item:hover {
-  background: var(--hover-color);
+  background: var(--primary);
   transform: translateY(-5px);
   color: var(--light);
 }
@@ -3492,7 +3492,7 @@
   margin-top: 20px;
 }
 .adoption-stat-box {
-  background-color: #007bff;
+  background-color: #993F3F;
   padding: 30px;
   border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
