@@ -1511,6 +1511,11 @@
     display: flex;
     justify-content: center;
   }
+  .edu-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1543,6 +1548,7 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    gap: 2rem;
   }
 
   .col-lg-6.wow.fadeInUp {
@@ -3008,6 +3014,9 @@
   .about-hero-content {
     margin-bottom: -10rem;
   }
+  .about-page-para1{
+    /* margin-bottom: 7rem !important; */
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -3033,6 +3042,9 @@
 @media screen and (max-width : 991px){
   .about-page-section{
     margin-top: -30rem;
+  }
+  .donate-button-footer{
+    display: block;
   }
 }
 @media screen and (max-width:650px){
