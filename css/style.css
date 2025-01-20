@@ -240,10 +240,10 @@
   background-size: cover;
 }
 
-#skill {
+/* #skill {
   background: linear-gradient(rgba(0, 29, 35, .3), rgba(0, 29, 35, .3)), url(../img/cause/skills/it2.jpeg) center center no-repeat;
   background-size: cover;
-}
+} */
 
 #mock {
   background: linear-gradient(rgba(0, 29, 35, .3), rgba(0, 29, 35, .3)), url(../img/cause/mock/MK1.jpg) center center no-repeat;
