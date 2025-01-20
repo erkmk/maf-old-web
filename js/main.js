@@ -39,6 +39,7 @@
     
     // Toggle navbar toggler icon between hamburger and cross on click
 $('.navbar-toggler').click(function () {
+    console.log("Hello")
     $(this).find('.navbar-toggler-icon').toggleClass('open'); // Toggle the cross icon on click
 });
     // Back to top button
