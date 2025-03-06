@@ -32,7 +32,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
- .heross {
+        .heross {
             width: 100%;
             /* min-height: 70vh; */
             position: relative;
@@ -72,7 +72,7 @@
             margin-right: 6px;
         }
 
-           
+
 
         @media (max-width: 640px) {
             .heross h1 {
@@ -89,102 +89,122 @@
 
 
         }
-        #team ul li{
+
+        #team ul li {
             font-size: 19px;
             font-weight: 600;
             color: black;
         }
-        .team_member_position{
+
+        .team_member_position {
             font-size: 15px;
             font-weight: 500;
             color: rgb(138, 138, 138);
             font-style: italic;
         }
+
         .team_modal {
-    display: none !important; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the modal */
-    width: 100vw;  /* Adjust width as needed */
-    height: 100vh; /* Let the height adjust based on content */
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100000; /* Make sure it's on top */
-}
+            display: none !important;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Center the modal */
+            width: 100vw;
+            /* Adjust width as needed */
+            height: 100vh;
+            /* Let the height adjust based on content */
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100000;
+            /* Make sure it's on top */
+        }
 
-.modal-content-team {
-    background: white;
-    padding: 30px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-}
-.modal-content-team .modal_data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+        .modal-content-team {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+        }
 
-}
-.modal-content-team .modal_data img{
-    width: 100%;
-    height: auto;
-}
-.modal-content-team .modal_data .modal-text{
-    text-align: left;
-    overflow-y: auto;
-    width: 100%;
-    height: 80%;
-}
-.modal-content-team .modal_data .modal-text span{
-    font-size: 15px;
-    padding-bottom: 3rem;
-}
-/* To show the modal */
-.showss {
-    display: block !important;
-    display: flex !important; 
-}
-.closeteamModal{
-    background: #993F3F;
-    align-items: left;
-    color: white;
-    border: none; padding: 0.3rem 1rem;
-    border-radius: 3px;
-    display: grid;
-    place-items: left;
-}
-.btn-outline-primary {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-@media screen and (max-width:1080px) {
-    .modal-content-team{
-        width: 90%;
-    }
-}
-@media screen and (max-width:892px) {
-    .modal-content-team{
-        width: 99% !important;
-    }
-}
-@media screen and (max-width:744px) {
-    .modal-content-team .modal_data{
-        display: grid;
-    grid-template-columns: auto !important;
-    gap: 2rem;
-}
-.modal-content-team .modal_data img{
-    width: 40%;
-}
-/* .modal-content-team .modal_data .modal-text{
+        .modal-content-team .modal_data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+        }
+
+        .modal-content-team .modal_data img {
+            width: 100%;
+            height: auto;
+        }
+
+        .modal-content-team .modal_data .modal-text {
+            text-align: left;
+            overflow-y: auto;
+            width: 100%;
+            height: 80%;
+        }
+
+        .modal-content-team .modal_data .modal-text span {
+            font-size: 15px;
+            padding-bottom: 3rem;
+        }
+
+        /* To show the modal */
+        .showss {
+            display: block !important;
+            display: flex !important;
+        }
+
+        .closeteamModal {
+            background: #993F3F;
+            align-items: left;
+            color: white;
+            border: none;
+            padding: 0.3rem 1rem;
+            border-radius: 3px;
+            display: grid;
+            place-items: left;
+        }
+
+        .btn-outline-primary {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        @media screen and (max-width:1080px) {
+            .modal-content-team {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:892px) {
+            .modal-content-team {
+                width: 99% !important;
+            }
+        }
+
+        @media screen and (max-width:744px) {
+            .modal-content-team .modal_data {
+                display: grid;
+                grid-template-columns: auto !important;
+                gap: 2rem;
+            }
+
+            .modal-content-team .modal_data img {
+                width: 40%;
+            }
+
+            /* .modal-content-team .modal_data .modal-text{
         text-align: center;
 
     } */
-}
+        }
     </style>
 </head>
 
@@ -235,7 +255,7 @@
                             <a href="disability-orphans.html" class="dropdown-item">Disability and Orphans</a>
                             <a href="skill.html" class="dropdown-item">Employement</a>
                             <a href="counselling.html" class="dropdown-item">Counselling</a>
-                           <a href="scholarship.html" class="dropdown-item">Scholarship</a>
+                            <a href="scholarship.html" class="dropdown-item">Scholarship</a>
                             <a href="service.html" class="dropdown-item">Study Center</a>
                         </div>
                     </div>
@@ -286,10 +306,10 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100 pt-5 pe-5"
-                        src="img/cause/information/IC1.jpg" alt="" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/cause/information/IC1.jpg" alt=""
+                            style="object-fit: cover;">
                         <!-- <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/cause/information/IC1.jpg" -->
-                            <!-- alt="" style="width: 200px; height: 200px;"> -->
+                        <!-- alt="" style="width: 200px; height: 200px;"> -->
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp about-hero-content" data-wow-delay="0.5s">
@@ -301,7 +321,13 @@
                                 Services.</p>
                             <span class="text-primary">Abdur Rehman Khan, Founder</span>
                         </div>
-                        <p class="mb-5 about-page-para1">The Mission Awareness Foundation (MAF) is a non-profit societal organization with a noble mission at its core. MAF is a Secular Trust registered in 2020 with the Charity Commissioner of Mumbai. Founded in the year 2020 by a dedicated group of well-educated and socially responsible individuals, MAF is committed to making a positive impact on society. The organization passionately pursues a range of development programs aimed at uplifting communities that have been socially, economically, and educationally marginalized.
+                        <p class="mb-5 about-page-para1">The Mission Awareness Foundation (MAF) is a non-profit societal
+                            organization with a noble mission at its core. MAF is a Secular Trust registered in 2020
+                            with the Charity Commissioner of Mumbai. Founded in the year 2020 by a dedicated group of
+                            well-educated and socially responsible individuals, MAF is committed to making a positive
+                            impact on society. The organization passionately pursues a range of development programs
+                            aimed at uplifting communities that have been socially, economically, and educationally
+                            marginalized.
                         </p>
 
                         <!-- <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
@@ -325,16 +351,26 @@
             <div class="row gy-2 align-items-start">
 
                 <div class="col-lg-6   d-flex flex-column justify-content-center ">
-                    <p>The MAF is a pioneering organization dedicated to revolutionizing the educational and medical landscapes. Guided by the principles of selflessness and inclusivity, MAF  envisions a transformative impact on society through innovative methods and collaborative efforts.
-<br>MAF's tireless efforts extend to various areas of social concern, with a primary focus on eradicating school dropouts, through a combination of  awareness campaigns, Scholarships and practical initiatives, MAF strives to create an environment where every child has the opportunity to pursue their dreams and reach their full potential.
+                    <p>The MAF is a pioneering organization dedicated to revolutionizing the educational and medical
+                        landscapes. Guided by the principles of selflessness and inclusivity, MAF envisions a
+                        transformative impact on society through innovative methods and collaborative efforts.
+                        <br>MAF's tireless efforts extend to various areas of social concern, with a primary focus on
+                        eradicating school dropouts, through a combination of awareness campaigns, Scholarships and
+                        practical initiatives, MAF strives to create an environment where every child has the
+                        opportunity to pursue their dreams and reach their full potential.
 
                     </p>
-                   
+
 
                 </div>
                 <div class="col-lg-6 order-lg-last">
                     <p>
-                        In addition to its vital work in combating school dropouts, MAF is actively involved in a wide array of activities aimed at fostering holistic community development. These encompass employment programs for youth and women, the protection and advocacy of citizens' rights, healthcare initiatives MAF firmly believes in the power of education as a catalyst for change, and as such, they work diligently to ensure that education reaches the most underserved segments of society.
+                        In addition to its vital work in combating school dropouts, MAF is actively involved in a wide
+                        array of activities aimed at fostering holistic community development. These encompass
+                        employment programs for youth and women, the protection and advocacy of citizens' rights,
+                        healthcare initiatives MAF firmly believes in the power of education as a catalyst for change,
+                        and as such, they work diligently to ensure that education reaches the most underserved segments
+                        of society.
 
                     </p>
                 </div>
@@ -407,11 +443,15 @@
 
 
                     <ul>
-                        <li></i>The vision of MAF is to become a catalyst for the progression, enhancement, and enrichment of society through awareness in the fields of education, health, sports, and skill development programs.</li>
+                        <li></i>The vision of MAF is to become a catalyst for the progression, enhancement, and
+                            enrichment of society through awareness in the fields of education, health, sports, and
+                            skill development programs.</li>
                     </ul>
                     <h3>Mission</h3>
                     <ul>
-                        <li>To provide quality education, promote accessible healthcare, enhance employability through skill development, and create opportunities in sports, all while fostering long-term sustainability through collaboration and inclusive community development.</li>
+                        <li>To provide quality education, promote accessible healthcare, enhance employability through
+                            skill development, and create opportunities in sports, all while fostering long-term
+                            sustainability through collaboration and inclusive community development.</li>
 
                     </ul>
 
@@ -428,137 +468,145 @@
     </section><!-- /Hero Section -->
 
     <section class="advisor-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 position-relative">
-                    <div class="image-container">
-                        <img src="img/about/advisor.jpg" class="img-fluid advisor-image" alt="Prajesh Trotsky">
-                        <div class="experience-badge">20+ Years of Experience</div>
-                    </div>
+        <div class="advisor-main">
+            <div class="image-container">
+                <img src="img/about/advisor.jpg" class="img-fluid advisor-image" alt="Prajesh Trotsky">
+                <div class="experience-badge">20+ Years of Experience</div>
+            </div>
+            <div>
+                <div class="highlight"></div>
+                <h2 class="advisor-title">Meet Our Expert Advisor</h2>
+                <h3 class="advisor-subtitle">Prajesh Trotsky – Advisor, Mission Awareness Foundation</h3>
+                <div class="content">
+                    <div class="vertical-line"></div>
+                    <ul class="advisor-list">
+                        <li class="advisor-list-item">Renowned Educator, Life Coach & TEDx Speaker</li>
+                        <li class="advisor-list-item">Trained 5,00,000+ students in goal setting & career guidance</li>
+                        <li class="advisor-list-item">Empowered 30,000+ parents with effective parenting strategies</li>
+                        <li class="advisor-list-item">Trained 15,000+ educators in leadership & teaching methodologies
+                        </li>
+                        <li class="advisor-list-item">Conducted free counseling for 2,500+ individuals</li>
+                        <li class="advisor-list-item">President of Maharashtra Class Owners' Association</li>
+                        <li class="advisor-list-item">Certified Graphologist & NLP Trainer</li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <div class="highlight"></div>
-                    <h2>Meet Our Expert Advisor</h2>
-                    <h3>Prajesh Trotsky – Advisor, Mission Awareness Foundation</h3>
-                    <div class="content">
-                        <div class="vertical-line"></div>
-                        <ul>
-                            <li>Renowned Educator, Life Coach & TEDx Speaker</li>
-                            <li>Trained 5,00,000+ students in goal setting & career guidance</li>
-                            <li>Empowered 30,000+ parents with effective parenting strategies</li>
-                            <li>Trained 15,000+ educators in leadership & teaching methodologies</li>
-                            <li>Conducted free counseling for 2,500+ individuals</li>
-                            <li>President of Maharashtra Class Owners' Association</li>
-                            <li>Certified Graphologist & NLP Trainer</li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="rating-social">
-                        
-                        <div class="social-icons">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
+                <div class="social team-details" data-target="modal5">
+                    <a href="#">Read More</a>
+                </div>
+                <hr class="divider">
+                <div class="rating-social">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prajeshtrotsky?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
-                        </div>
+                        </a>
+                        <a href="https://www.instagram.com/prajeshtrotsky?igsh=Z3p4cXRkOGg0ZjAw" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i> <!-- Use "fa-x-twitter" for the X logo -->
+                        </a>
                     </div>
-                    <hr>
-                    <p class="additional-info">Guiding students, parents, and educators towards a brighter future.</p>
                 </div>
+                <hr class="divider">
+                <!-- <p class="additional-info">Guiding students, parents, and educators towards a brighter future.</p> -->
             </div>
         </div>
     </section>
-      <!-- Heross Section -->
-       <!-- Team Section -->
- <section id="team-membersss" class="team-membersss section">
-
-   <div class="container"> <div class="text-center mx-auto mb-1 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; ">
-    <!-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Let's Discuss</div> -->
-    <h1 class="display-6 mb-1">Our Team Members
-    </h1>
-
-</div></div>
-
-<div class="container">
-    <div class="row gy-4">
-      <!-- Team Member 1 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/team/abdur rehman.jpeg" class="img-fluid" alt="">
-            <div class="social team-details" data-target="modal1">
-              <a href="#">Read More</a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>ABDUR REHMAN KHAN</h4>
-            <span>President</span>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Team Member 2 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/team/Khalid 1.png" class="img-fluid" alt="">
-            <div class="social team-details" data-target="modal2">
-              <a href="#">Read More</a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>MOHAMMED KHALID KHAN</h4>
-            <span>Counsellor</span>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Team Member 3 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/team/Shailesh Pal.jpeg" class="img-fluid" alt="">
-            <div class="social team-details" data-target="modal4">
-              <a href="#">Read More</a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>SHAILESH PAL</h4>
-            <span>Counsellor</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/team/khan sir.jpeg" class="img-fluid" alt="">
-            <div class="social team-details" data-target="modal3">
-              <a href="#">Read More</a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>ALAM HASRAT KHAN</h4>
-            <span>Counsellor</span>
-          </div>
-        </div>
-      </div>
-
-     
-    </div>
-  </div>
-
-  </section><!-- /Team Section -->
-
-      <section id="hero" class="heross section" style="padding-top: 50px;">
+    <!-- Heross Section -->
+    <!-- Team Section -->
+    <section id="team-membersss" class="team-membersss section">
 
         <div class="container">
-           
+            <div class="text-center mx-auto mb-1 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; ">
+                <!-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Let's Discuss</div> -->
+                <h1 class="display-6 mb-1">Our Team Members
+                </h1>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Team Member 1 -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="img/team/abdur rehman.jpeg" class="img-fluid" alt="">
+                            <div class="social team-details" id="advisor-btn" data-target="modal1">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>ABDUR REHMAN KHAN</h4>
+                            <span>President</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="img/team/Khalid 1.png" class="img-fluid" alt="">
+                            <div class="social team-details" data-target="modal2">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>MOHAMMED KHALID KHAN</h4>
+                            <span>Counsellor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="img/team/Shailesh Pal.jpeg" class="img-fluid" alt="">
+                            <div class="social team-details" data-target="modal4">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>SHAILESH PAL</h4>
+                            <span>Counsellor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="img/team/khan sir.jpeg" class="img-fluid" alt="">
+                            <div class="social team-details" data-target="modal3">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>ALAM HASRAT KHAN</h4>
+                            <span>Counsellor</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section><!-- /Team Section -->
+
+    <section id="hero" class="heross section" style="padding-top: 50px;">
+
+        <div class="container">
+
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/1.png" alt="" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">Purpose of the project</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Abdurrehman Khan <br> <span class="team_member_position"> (President)</span>
+                        <p class="mb-4" style="color: black; font-weight: 700;">Abdurrehman Khan <br> <span
+                                class="team_member_position"> (President)</span>
                         </p>
 
                     </div>
@@ -567,8 +615,9 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/2.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">Project Details</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;"> Kamaluddin Khan <br> <span class="team_member_position"> (V-President)</span></p>
-                        
+                        <p class="mb-4" style="color: black; font-weight: 700;"> Kamaluddin Khan <br> <span
+                                class="team_member_position"> (V-President)</span></p>
+
 
                     </div>
                 </div>
@@ -576,7 +625,8 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Moinuddin Khan <br> <span class="team_member_position"> (Secretory)</span> 
+                        <p class="mb-4" style="color: black; font-weight: 700;">Moinuddin Khan <br> <span
+                                class="team_member_position"> (Secretory)</span>
                         </p>
 
                     </div>
@@ -586,7 +636,8 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Sumaiya Samani <br> <span class="team_member_position"> (V-Secretory)</span> 
+                        <p class="mb-4" style="color: black; font-weight: 700;">Sumaiya Samani <br> <span
+                                class="team_member_position"> (V-Secretory)</span>
                         </p>
 
                     </div>
@@ -596,28 +647,8 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Abulaish Khan <br> <span class="team_member_position"> (Treasurer)</span> 
-                        </p>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
-                        <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Shailesh Pal<br> <span class="team_member_position"> (Member)</span> 
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
-                        <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Mohd Atif Khan <br> <span class="team_member_position"> (Member)</span> 
+                        <p class="mb-4" style="color: black; font-weight: 700;">Abulaish Khan <br> <span
+                                class="team_member_position"> (Treasurer)</span>
                         </p>
 
                     </div>
@@ -628,7 +659,19 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Naseem Shah <br> <span class="team_member_position"> (Member)</span> 
+                        <p class="mb-4" style="color: black; font-weight: 700;">Shailesh Pal<br> <span
+                                class="team_member_position"> (Member)</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
+                        <!-- <h4 class="mb-3">How you can help</h4> -->
+                        <p class="mb-4" style="color: black; font-weight: 700;">Mohd Atif Khan <br> <span
+                                class="team_member_position"> (Member)</span>
                         </p>
 
                     </div>
@@ -639,7 +682,20 @@
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
                         <!-- <h4 class="mb-3">How you can help</h4> -->
-                        <p class="mb-4" style="color: black; font-weight: 700;">Mohammed Khalid<br> <span class="team_member_position"> (Member)</span> 
+                        <p class="mb-4" style="color: black; font-weight: 700;">Naseem Shah <br> <span
+                                class="team_member_position"> (Member)</span>
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <!-- <img class="img-fluid mb-4" src="img/cause/counselling/3.png" style="width: 20%;"> -->
+                        <!-- <h4 class="mb-3">How you can help</h4> -->
+                        <p class="mb-4" style="color: black; font-weight: 700;">Mohammed Khalid<br> <span
+                                class="team_member_position"> (Member)</span>
                         </p>
 
                     </div>
@@ -671,8 +727,8 @@
         </div>
 
     </section><!-- /Hero Section -->
-    
- 
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -687,15 +743,21 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                     <a class="btn btn-link" href="https://www.google.com/maps/place/Mission+Awareness+Foundation/@19.0990449,72.8867914,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c9be914b971f:0x9ba98e22d61702d4!8m2!3d19.0990398!4d72.8893663!16s%2Fg%2F11rl89ywd2?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lokmanya Tilak Nagar, 90 ft. Road, Near Sakinaka Metro Station, Mumbai - 400 072.</a>
+                    <a class="btn btn-link"
+                        href="https://www.google.com/maps/place/Mission+Awareness+Foundation/@19.0990449,72.8867914,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c9be914b971f:0x9ba98e22d61702d4!8m2!3d19.0990398!4d72.8893663!16s%2Fg%2F11rl89ywd2?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">Lokmanya Tilak Nagar, 90 ft. Road, Near Sakinaka Metro Station, Mumbai - 400
+                        072.</a>
                     <!-- <a class="btn" href="tel:+91 9004417626" style="padding-left: 0; color: rgba(255, 255, 255, 0.5);">
                         <p><i class="fa fa-phone-alt me-3"></i>+91 9004417626</p>
                     </a> -->
                     <a class="btn" href="tel:+91 9004417626" style="padding-left: 0; color: rgba(255, 255, 255, 0.5);">
                         <p><i class="fa fa-phone-alt me-3"></i>+91 9004417626</p>
                     </a>
-                    <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=connect@missionawareness.org" style="padding-left: 0;" target="_blank">
-                        <p style="font-size: 16px; margin-top: -1rem; color: rgba(255, 255, 255, 0.5);"><i class="fa fa-envelope"></i> connect@missionawareness.org</p>
+                    <a class="btn"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=connect@missionawareness.org"
+                        style="padding-left: 0;" target="_blank">
+                        <p style="font-size: 16px; margin-top: -1rem; color: rgba(255, 255, 255, 0.5);"><i
+                                class="fa fa-envelope"></i> connect@missionawareness.org</p>
                     </a>
 
                 </div>
@@ -718,7 +780,8 @@
                             target="_blank"><i class="fa fa-envelope"></i></a>
                         <a class="btn btn-square me-1" href="https://www.facebook.com/missionawarenessfoundation/"
                             target="_blank"><i class="fab fa-facebook-f"></i></a>
-                       <a class="btn btn-square me-1" href="https://www.youtube.com/@mission_awareness_foundation" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-1" href="https://www.youtube.com/@mission_awareness_foundation"
+                            target="_blank"><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square me-0"
                             href="https://www.instagram.com/mission_awareness?utm_medium=copy_link" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
@@ -745,94 +808,143 @@
 
     <div class="team_modal" id="modal1">
         <div class="modal-content-team">
-          <div class="modal_data">
-            <div><img src="img/team/abdur rehman.jpeg" alt=""></div>
-            <div class="modal-text">
-              <h6>ABDUR REHMAN KHAN</h6>
-              <span>President</span>
-              <p>Abdurrahman Khan completed his schooling in 2011 and his B.E. in Biotechnology in 2017. He later pursued an M.Tech in Food Biotechnology from the Institute of Chemical Technology, Mumbai. During his studies, he gained experience in microbiology, tissue culture, and biofuel production. In 2020, he founded the Mission Awareness Foundation, where he and his team provide career, scholarship, and legal counseling to students, helping over 10,000 people. Abdurrahman is also a certified counselor and has fought for students' rights, saving millions in scholarships across Maharashtra. Now, at 28, he is pursuing an MBBS and continues to serve society.</p>
-              <button class="closeteamModal">Close</button>
+            <div class="modal_data">
+                <div><img src="img/team/abdur rehman.jpeg" alt=""></div>
+                <div class="modal-text">
+                    <h6>ABDUR REHMAN KHAN</h6>
+                    <span>President</span>
+                    <p>Abdurrahman Khan completed his schooling in 2011 and his B.E. in Biotechnology in 2017. He later
+                        pursued an M.Tech in Food Biotechnology from the Institute of Chemical Technology, Mumbai.
+                        During his studies, he gained experience in microbiology, tissue culture, and biofuel
+                        production. In 2020, he founded the Mission Awareness Foundation, where he and his team provide
+                        career, scholarship, and legal counseling to students, helping over 10,000 people. Abdurrahman
+                        is also a certified counselor and has fought for students' rights, saving millions in
+                        scholarships across Maharashtra. Now, at 28, he is pursuing an MBBS and continues to serve
+                        society.</p>
+                    <button class="closeteamModal">Close</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
-      <div class="team_modal" id="modal2">
-        <div class="modal-content-team">
-          <div class="modal_data">
-            <div><img src="img/team/Khalid 1.png" alt=""></div>
-            <div class="modal-text">
-              <h6>MOHAMMED KHALID KHAN</h6>
-              <span>Counsellor</span>
-              <p>Mohammed Khalid Khan has earned his Electronics and Telecom Engineering degree from DY Patil’s Ramrao Adik Institute of Technology, Navi Mumbai's top college renowned for its excellence in technology education.
-            
-              </p>
-              <p>
-                He is a coding enthusiast and has worked with US & UK based companies like IntegriChain & Velestra in the past.
-              </p>
-              <button class="closeteamModal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="team_modal" id="modal3">
-        <div class="modal-content-team">
-          <div class="modal_data">
-            <div><img src="img/team/khan sir.jpeg" alt=""></div>
-            <div class="modal-text">
-              <h6>ALAM HASRAT KHAN</h6>
-              <span>Counsellor</span>
-              <p>Dr. Alam Hasrat Khan is a dedicated professor, educator, and career counselor who has taught over 7000 students and counseled more than 2000 individuals. He has delivered many speeches on education, helping students achieve their dreams.</p>
-              <p>He holds honorary doctorates in Education Counseling from the World Human Rights Commission and in Education from the International University of California. His qualifications include degrees in Mechanical Engineering (B.E., M.Tech), MBA (HR), B.A. Political Science, B.Sc. Physics, M.Sc. Physics, and M.A. History.</p>
-              <p>Dr. Alam also holds diplomas in Psychology, NGO Management, and Career Counseling, along with certificates in International Law, Business Analytics, and Career Guidance.</p>
-              <p>He leads several organizations, including ASPERA Foundation and GTWA as President, and RUHA Foundation as Secretary. He is also the Director of RUHA EDULAB and an advisor to the Mission Awareness Foundation.</p>
-              <button class="closeteamModal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <div class="team_modal" id="modal4">
+    <div class="team_modal" id="modal2">
         <div class="modal-content-team">
-          <div class="modal_data">
-            <div><img src="img/team/Shailesh Pal.jpeg" alt=""></div>
-            <div class="modal-text">
-              <h6>SHAILESH PAL</h6>
-              <span>Counsellor</span>
-              <p>Shailesh Pal is a dedicated professional with a strong background in IT and education. He has completed his B.Sc in IT and has spent 7 years as a teacher, helping students learn and grow in the field of technology. His teaching experience has given him a deep understanding of how to simplify complex concepts and make learning engaging.</p>
-              <p>For the past 3 years, Shailesh has been actively involved with the Mission Awareness Foundation as a committed team member. During this time, he has worked on various initiatives aimed at spreading education and raising awareness in underserved communities.</p>
-              <p>Shailesh combines his expertise in IT with his passion for teaching to contribute meaningfully to the foundation's mission. His skills, dedication, and innovative approach make him a valuable part of the team.</p>
-              <button class="closeteamModal">Close</button>
+            <div class="modal_data">
+                <div><img src="img/team/Khalid 1.png" alt=""></div>
+                <div class="modal-text">
+                    <h6>MOHAMMED KHALID KHAN</h6>
+                    <span>Counsellor</span>
+                    <p>Mohammed Khalid Khan has earned his Electronics and Telecom Engineering degree from DY Patil’s
+                        Ramrao Adik Institute of Technology, Navi Mumbai's top college renowned for its excellence in
+                        technology education.
+
+                    </p>
+                    <p>
+                        He is a coding enthusiast and has worked with US & UK based companies like IntegriChain &
+                        Velestra in the past.
+                    </p>
+                    <button class="closeteamModal">Close</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <div class="team_modal" id="modal3">
+        <div class="modal-content-team">
+            <div class="modal_data">
+                <div><img src="img/team/khan sir.jpeg" alt=""></div>
+                <div class="modal-text">
+                    <h6>ALAM HASRAT KHAN</h6>
+                    <span>Counsellor</span>
+                    <p>Dr. Alam Hasrat Khan is a dedicated professor, educator, and career counselor who has taught over
+                        7000 students and counseled more than 2000 individuals. He has delivered many speeches on
+                        education, helping students achieve their dreams.</p>
+                    <p>He holds honorary doctorates in Education Counseling from the World Human Rights Commission and
+                        in Education from the International University of California. His qualifications include degrees
+                        in Mechanical Engineering (B.E., M.Tech), MBA (HR), B.A. Political Science, B.Sc. Physics, M.Sc.
+                        Physics, and M.A. History.</p>
+                    <p>Dr. Alam also holds diplomas in Psychology, NGO Management, and Career Counseling, along with
+                        certificates in International Law, Business Analytics, and Career Guidance.</p>
+                    <p>He leads several organizations, including ASPERA Foundation and GTWA as President, and RUHA
+                        Foundation as Secretary. He is also the Director of RUHA EDULAB and an advisor to the Mission
+                        Awareness Foundation.</p>
+                    <button class="closeteamModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team_modal" id="modal4">
+        <div class="modal-content-team">
+            <div class="modal_data">
+                <div><img src="img/team/Shailesh Pal.jpeg" alt=""></div>
+                <div class="modal-text">
+                    <h6>SHAILESH PAL</h6>
+                    <span>Counsellor</span>
+                    <p>Shailesh Pal is a dedicated professional with a strong background in IT and education. He has
+                        completed his B.Sc in IT and has spent 7 years as a teacher, helping students learn and grow in
+                        the field of technology. His teaching experience has given him a deep understanding of how to
+                        simplify complex concepts and make learning engaging.</p>
+                    <p>For the past 3 years, Shailesh has been actively involved with the Mission Awareness Foundation
+                        as a committed team member. During this time, he has worked on various initiatives aimed at
+                        spreading education and raising awareness in underserved communities.</p>
+                    <p>Shailesh combines his expertise in IT with his passion for teaching to contribute meaningfully to
+                        the foundation's mission. His skills, dedication, and innovative approach make him a valuable
+                        part of the team.</p>
+                    <button class="closeteamModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team_modal" id="modal5">
+        <div class="modal-content-team">
+            <div class="modal_data">
+                <div><img src="img/about/advisor.jpg" alt="Prajesh Trotsky"></div>
+                <div class="modal-text">
+                    <h6>PRAJESH TROTSKY</h6>
+                    <span>Advisor, Mission Awareness Foundation</span>
+                    <p>Mission Awareness Foundation is proud to welcome Mr. Prajesh Trotsky as an Advisor. A renowned educator, life coach, and TEDx speaker, he brings over two decades of expertise in education, leadership, and personal development. His transformative work has impacted students, parents, and educators across the nation.</p>
+                    <p><strong>Key Contributions:</strong></p>
+                    <ul>
+                        <li>Trained 5,00,000+ students in goal setting, time management, and career guidance.</li>
+                        <li>Empowered 30,000+ parents with effective parenting strategies.</li>
+                        <li>Trained 15,000+ educators in advanced teaching methodologies and leadership skills.</li>
+                        <li>Conducted free counseling for 2,500+ individuals through initiatives like ‘Talk to Me’ and ‘Mission Wellness.’</li>
+                        <li>Served as President of the Maharashtra Class Owners' Association and Social Ambassador for the Indian Development Foundation (IDF).</li>
+                        <li>Certified Graphologist and NLP Trainer, enhancing personal growth and behavioral understanding.</li>
+                    </ul>
+                    <p>With his unwavering commitment to education and empowerment, Mr. Trotsky aligns perfectly with the foundation's vision. We are honored to have him as a guiding force in our journey toward a more informed and empowered society.</p>
+                    <button class="closeteamModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up text-white"></i></a>
 
     <script>
-    const modals = document.querySelectorAll('.team_modal');
-const teamDetails = document.querySelectorAll('.team-details');
-const closeButtons = document.querySelectorAll('.closeteamModal');
+        const modals = document.querySelectorAll('.team_modal');
+        const teamDetails = document.querySelectorAll('.team-details');
+        const closeButtons = document.querySelectorAll('.closeteamModal');
 
-// Show the modal when "Read More" is clicked
-teamDetails.forEach(detail => {
-  detail.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent default behavior
-    const targetModalId = detail.getAttribute('data-target');
-    const targetModal = document.getElementById(targetModalId);
-    targetModal.classList.add('showss'); // Show the modal
-  });
-});
+        // Show the modal when "Read More" is clicked
+        teamDetails.forEach(detail => {
+            detail.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default behavior
+                const targetModalId = detail.getAttribute('data-target');
+                const targetModal = document.getElementById(targetModalId);
+                targetModal.classList.add('showss'); // Show the modal
+            });
+        });
 
-// Close the modal when the close button is clicked
-closeButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    button.closest('.team_modal').classList.remove('showss'); // Hide the modal
-  });
-});
-      </script>
+        // Close the modal when the close button is clicked
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.closest('.team_modal').classList.remove('showss'); // Hide the modal
+            });
+        });
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -841,7 +953,7 @@ closeButtons.forEach(button => {
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
-   
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
