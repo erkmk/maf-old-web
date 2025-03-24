@@ -3790,7 +3790,10 @@
     bottom: -10px;
     font-size: 10px;
 }
-.image-container img{
-  /* width: 50%; */
 }
+.copyright-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
